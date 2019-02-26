@@ -1,7 +1,7 @@
-@import '~bootstrap/scss/bootstrap.scss';
-@import '~material-design-icons/iconfont/material-icons.css';
-
 $theme-colors: (
   "primary": black,
-  "danger": white
+  "secundary": white
 );
+
+@import '~bootstrap/scss/bootstrap.scss';
+@import '~material-design-icons/iconfont/material-icons.css';
