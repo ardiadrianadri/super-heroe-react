@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 
-export class Home extends Component {
+import { SearchForm } from '../components/search-form';
 
-    render() {
-        return (
-            <div className="home">
-                <h1>This is home page</h1>
-            </div>
-        );
-    }
+export class Home extends Component {
+  render() {
+    return (
+      <div className="home">
+        <SearchForm />
+      </div>
+    );
+  }
 }
