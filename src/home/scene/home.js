@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
-import { SearchForm } from '../components/search-form';
+import { SearchHero } from '../containers/search-hero';
 
 export class Home extends Component {
   render() {
     return (
       <div className="home">
-        <SearchForm />
+        <SearchHero />
       </div>
     );
   }
