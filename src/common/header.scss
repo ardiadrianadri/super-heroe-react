@@ -1,0 +1,24 @@
+.title {
+  width: 90%;
+  .header-image {
+    width: 70px;
+    height: 70px;
+
+    &.logo {
+      width: 100px;
+      height: 45px;
+    }
+  }
+
+  .header-text {
+    font-size: 30px;
+  }
+}
+
+.actions {
+
+  .home {
+    cursor: pointer;
+    font-size: 35px;
+  }
+}
