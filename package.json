@@ -28,7 +28,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "danger": "DANGER_GITHUB_API_TOKEN=54776e0baa9008061e9a6a74331c6cdb6e0685fb danger ci"
+    "danger": "DANGER_GITHUB_API_TOKEN=5f4b09dce87918a1b71089faf09fe2505c131569 danger ci"
   },
   "eslintConfig": {
     "extends": "react-app"
