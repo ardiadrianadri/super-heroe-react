@@ -28,7 +28,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "danger": "DANGER_GITHUB_API_TOKEN=54776e0baa9008061e9a6a74331c6cdb6e0685fb danger pr https://github.com/ardiadrianadri/super-heroe-react/pull/20"
+    "danger": "DANGER_GITHUB_API_TOKEN=54776e0baa9008061e9a6a74331c6cdb6e0685fb danger"
   },
   "eslintConfig": {
     "extends": "react-app"
