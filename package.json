@@ -28,8 +28,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "danger": "DANGER_GITHUB_API_TOKEN=0fd68ae1cea37df814ee9ac68a2dce72ca559dc9 danger ci",
-    "danger:pr": "DANGER_GITHUB_API_TOKEN=20b3e0f195338429b16816e9c18c1f4057dcb34f danger pr https://github.com/ardiadrianadri/super-heroe-react/pull/23d"
+    "danger": "danger ci",
+    "danger:pr": "DANGER_GITHUB_API_TOKEN=a2223890ad0df4b629c2c3cdebd795f55f9f02ee danger pr https://github.com/ardiadrianadri/super-heroe-react/pull/23d"
   },
   "eslintConfig": {
     "extends": "react-app"
