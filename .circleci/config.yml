@@ -7,9 +7,9 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: circleci/node:10.15ç
+      - image: circleci/node:10.15
     environment:
-        DANGER_GITHUB_API_TOKEN: a2223890ad0df4b629c2c3cdebd795f55f9f02ee
+        DANGER_GITHUB_API_TOKEN: f5b3b10461ec3242a110d23ed2bd331be2b60d3d
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
