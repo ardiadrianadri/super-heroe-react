@@ -9,7 +9,7 @@ jobs:
       # specify the version you desire here
       - image: circleci/node:10.15
     environment:
-        DANGER_GITHUB_API_TOKEN: 33695d81546a45a3f4eeb50469d467a45f2e81e1
+        DANGER_GITHUB_API_TOKEN: 27b9e9336764e90aac701bf60080a52ba57a49c5
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
