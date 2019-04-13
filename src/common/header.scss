@@ -22,3 +22,27 @@
     font-size: 35px;
   }
 }
+
+.mostrar{
+  display:block !important;
+}
+
+#nav-bg-color-marvel{
+  background: #EE161F !important;
+}
+
+
+.navbar-toggler.collapsed{
+  border: 1px solid rgba(255,255,255,0.5);
+  /*height: 65px;
+  width: 65px;*/
+}
+
+header #nav-bg-color-marvel{
+  height: 75px;
+}
+
+#navbarHeader{
+  height: 175px;
+  background: black !important;
+}
