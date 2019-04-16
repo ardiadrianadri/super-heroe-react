@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import MaterialIcon, { colorPalette } from 'material-design-icons';
 import './SearchBar.css';
 
 class SearchBar extends Component {
@@ -19,20 +18,19 @@ class SearchBar extends Component {
 
   render() {
     return (
-      <div className="container">
-        <form onSubmit={this.onFormSubmit} className="form-group has-search">
-          <MaterialIcon icon="dashboard" />
-          <span className="fa fa-search form-control-feedback" />
+      <div>
+        <form onSubmit={this.onFormSubmit} className="form-group has-search search-form">
+          <i className="material-icons form-control-feedback">search</i>
           <input
             className="form-control"
             type="text"
             value={this.state.query}
             onChange={this.onInputChange}
-            placeholder="Start typing ..."
+            placeholder="Start typing the superhero's name you want to search..."
           />
-          <span className="input-group-btn">
-            <button className="btn btn-info">Search</button>
-          </span>
+          <button type="submit" className="btn btn-danger">
+            Send
+          </button>
         </form>
       </div>
     );

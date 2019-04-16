@@ -12,7 +12,7 @@ class App extends Component {
       <Router>
         <React.Fragment>
           <Header />
-          <div className="app-body">
+          <div className="app-body container">
             <Route exact path="/" render={() => <Redirect to="/home" />} />
             <Route path="/home" component={Home} />
             <Route path="/details" component={Details} />
