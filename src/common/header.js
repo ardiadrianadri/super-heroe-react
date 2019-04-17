@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import './header.scss';
+import marvelLogo from './img/MarvelLogo.png';
+import oswLogo from './img/osw-logo.jpg';
 
 export class Header extends Component {
-  // constructor(props) {
-  //   super(props);
-  // }
-
   handlerClickHome() {
     window.location.href = '/home';
   }
@@ -31,7 +29,7 @@ export class Header extends Component {
               </div>
               <div className="col-sm-4 offset-md-1 py-4">
                 <img
-                  src="./img/osw-logo.jpg"
+                  src={oswLogo}
                   alt="Logo Open Source Weekends"
                   width="125"
                   className="rounded mx-auto d-block"
@@ -44,7 +42,7 @@ export class Header extends Component {
           <div className="container">
             <a className="navbar-brand" href="#">
               <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/MarvelLogo.svg/1600px-MarvelLogo.svg.png"
+                src={marvelLogo}
                 className="d-inline-block align-top"
                 height="50"
                 width="150"
@@ -59,7 +57,7 @@ export class Header extends Component {
               aria-controls="navbarHeader"
               aria-expanded="false"
               aria-label="Toggle navigation"
-              onClick={this.quienesSomos}
+              onClick={this.quienesSomos.bind(this)}
               height="100"
             >
               <span className="navbar-toggler-icon" />
@@ -67,32 +65,6 @@ export class Header extends Component {
           </div>
         </div>
       </header>
-      /*
-      <nav className="navbar navbar-expand-lg navbar-primary bg-primary text-secundary">
-        <span className="title d-flex justify-content-center align-items-center">
-          <img
-            src="/images/capitan-sheild.png"
-            className="header-image sheild"
-            alt="Captain Shield"
-          />
-          <img
-            src="/images/marvel-logo.png"
-            className="header-image logo ml-3 mr-2"
-            alt="Marvel Logo"
-          />
-          <span className="header-text navbar-brand">wiki</span>
-          <img
-            src="/images/capitan-sheild.png"
-            className="header-image sheild"
-            alt="Captain Shield"
-          />
-        </span>
-        <span className="actions ml-auto">
-          <span className="home material-icons" onClick={this.handlerClickHome.bind(this)}>
-            home
-          </span>
-        </span>
-      </nav>*/
     );
   }
 }

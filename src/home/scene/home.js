@@ -3,7 +3,7 @@ import SearchBar from '../components/SearchBar';
 
 export class Home extends Component {
   onSearchSubmit(term) {
-    console.log(term);
+    console.log(term); // Borrar cuando se implemente la llamada a la API
   }
 
   render() {

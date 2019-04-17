@@ -18,17 +18,20 @@ class SearchBar extends Component {
 
   render() {
     return (
-      <div>
-        <form onSubmit={this.onFormSubmit} className="form-group has-search search-form">
+      <div className="">
+        <form
+          onSubmit={this.onFormSubmit.bind(this)}
+          className="container form-group has-search search-form"
+        >
           <i className="material-icons form-control-feedback">search</i>
           <input
             className="form-control"
             type="text"
             value={this.state.query}
-            onChange={this.onInputChange}
+            onChange={this.onInputChange.bind(this)}
             placeholder="Start typing the superhero's name you want to search..."
           />
-          <button type="submit" className="btn btn-danger">
+          <button type="submit" className="btn btn-danger buttom-form">
             Send
           </button>
         </form>
