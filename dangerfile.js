@@ -5,12 +5,14 @@ const owner = process.env.GITHUB_OWNER || 'ardiadrianadri';
 const repoName = process.env.GITHUB_REPO || 'super-heroe-react';
 const fails = []
 const validBranchName = /^(feature|bugfix|refactor|hotfix)\/.*$/g;
+const validGithubIssue = /issue #[0-9]{1,5}/gm;
 const leng = danger.github.commits.length;
 const lastCommit = danger.github.commits[leng-1];
+const reviewersCount = danger.github.requested_reviewers.users.length
 
 function finalJudgment (fails) {
   const leng = fails.length;
-  
+
   let msg = ''
   if(leng > 0) {
     msg += `This pull request is not worth for a superior race: \n`;
@@ -30,12 +32,16 @@ a superior race.
 I'm going to inspect your work to make sure your RP has what it needs to have ... so be a good developer and wait quietly while you watch as the expert works.
 `)
 
-if (!danger.github.pr.assignee) {
-  fails.push('The pull request must have, at least, an assignee... and some reviewer');
+if (reviewersCount <= 0) {
+  fails.push('The pull request must have, at least, one reviewer');
 }
 
 if (danger.github.pr.body.length === 0) {
-  fails.push('This pull request deserves some description to be clear, Don\'t you think?')
+  fails.push('This pull request deserves some description to be clear, Don\'t you think?');
+}
+
+if (validGithubIssue.test(danger.github.pr.body)) {
+  fails.push('This pull request is not related with any github issue. Are you sure that you are working in something that worth?');
 }
 
 danger.github.api.request(
