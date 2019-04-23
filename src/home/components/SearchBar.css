@@ -1,0 +1,24 @@
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+  }
+
+.has-search .form-control {
+    padding-left: 2.375rem;    
+}
+
+.search-form {
+  display: flex;
+  margin-top: 1.5rem;
+}
+
+.buttom-form {
+  margin-left: 1rem;
+}
