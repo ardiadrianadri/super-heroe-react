@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import SearchBar from '../components/SearchBar/SearchBar';
 
 export class Home extends Component {
-  onSearchSubmit(term) {
-    console.log(term);
-  }
+  onSearchSubmit(term) {}
 
   render() {
     return (
