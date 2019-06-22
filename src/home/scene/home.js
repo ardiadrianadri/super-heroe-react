@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import SearchBar from '../components/SearchBar/SearchBar';
 
 export class Home extends Component {
-  onSearchSubmit(term) {}
+  onSearchSubmit(term) {
+    // eslint-disable-next-line
+    console.log(term);
+  }
 
   render() {
     return (
