@@ -1,0 +1,43 @@
+.title {
+    width: 90%;
+}
+
+.title .header-image {
+    width: 70px;
+    height: 70px;
+}
+
+.title .header-image .logo {
+    width: 100px;
+    height: 45px;
+}
+
+.header-text {
+    font-size: 30px;
+}
+  
+.actions .home {
+    cursor: pointer;
+    font-size: 35px; 
+}
+  
+.mostrar{
+    display:block !important;
+}
+  
+#nav-bg-color-marvel{
+    background: #EE161F !important;
+}
+  
+.navbar-toggler.collapsed{
+    border: 1px solid rgba(255,255,255,0.5);
+}
+
+header #nav-bg-color-marvel{
+    height: 75px;
+}
+
+#navbarHeader{
+    height: 175px;
+    background: black !important;
+}
