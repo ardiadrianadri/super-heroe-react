@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import SearchBar from '../components/SearchBar';
+import SearchBar from '../components/SearchBar/SearchBar';
 
 export class Home extends Component {
   onSearchSubmit(term) {
-    // eslint-disable-next-line no-console
-    console.log(term); // Borrar cuando se implemente la llamada a la API
+    // eslint-disable-next-line
+    console.log(term);
   }
 
   render() {

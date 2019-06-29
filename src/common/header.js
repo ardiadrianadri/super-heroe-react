@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './header.scss';
+import './header.css';
 import marvelLogo from './img/MarvelLogo.png';
 import oswLogo from './img/osw-logo.jpg';
 
