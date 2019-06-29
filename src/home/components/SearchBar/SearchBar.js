@@ -1,6 +1,6 @@
-/* eslint-disable react/prop-types */
 import React, { Component } from 'react';
 import './SearchBar.css';
+import PropTypes from 'prop-types';
 
 class SearchBar extends Component {
   state = {
@@ -40,5 +40,9 @@ class SearchBar extends Component {
     );
   }
 }
+
+SearchBar.propTypes = {
+  onSubmit: PropTypes.func
+};
 
 export default SearchBar;
